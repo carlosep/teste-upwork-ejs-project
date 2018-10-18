@@ -1,22 +1,21 @@
 const ejs = require('ejs');
-// const html = ejs.render('<h1><%= test %></h1>', {test: 'abc'});
-// console.log(html);
 
 ejs.renderFile('index.ejs', {
         title: 'xerereu',
         menu_items: [
-            ["#link", "item"],
-            ["#link2", "item2"]
+            ["#href", "item"],
+            ["#href", "item2"]
         ],
         sidebar_items: [
-            ["#link", "item"]
+            ["#href", "item"]
         ],
         numero: '9',
         data_aula: ['01/01/2018', '11:58'],
-        aula: ["Nome da Aula", "John Doe"],
+        aula: ["Nome da Aula", "Nome do professor"],
         modulo: ["Nome do módulo", "Informações do módulo"],
-        arquivos: [["#link", "Arquivo"]],
-        messages: [["you", "hello"], ["them", "hi"]]
+        arquivos: [["#href", "Arquivo"]],
+        messages: [["you", "hello"], ["them", "hi"]] /* you - mensagens que vieram de você (direita)
+                                                        them - mensagens que vieram do outro (esquerda) */
     },
     (err, html) => {
         console.log(err);
