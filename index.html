@@ -3,85 +3,112 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/materialize.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="topnav">
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
-        <h3 id="title">MBA em experiência ...</h3>
-        <div class="submenu">
-            <ul>
-                <a href="#"><li>MBA em experiência something</li></a>
-                <a href="#"><li>Lorem ipsum dolor</li></a>
-                <a href="#"><li>Sit amet consectetur</li></a>
-                <a href="#"><li>Adipisicing elit</li></a>
-                <a href="#"><li>Blanditiis praesentium</li></a>
-            </ul>
+    <nav class="nav-extended teal lighten-2">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div id="title">Title</div>
+        <div class="row teal lighten-2">
+            <div class="col s12">
+                <ul class="tabs teal lighten-2 ">
+                    <li class="active tab col s4"><a class="white-text" href="#test1">CALENDÁRIO</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test2">ELETIVAS</a></li>
+                    <li class="tab col s5"><a class="white-text" href="#test2">NOTAS E FALTAS</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test4">ITEM 4</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test4">ITEM 5</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test4">ITEM 6</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test4">ITEM 7</a></li>
+                    <li class="tab col s3"><a class="white-text" href="#test4">ITEM 8</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!">Título</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li class="active tab"><a href="#!">MBA em experiência something</a></li>
+        <li class="tab"><a href="#!">Placeholder text</a></li>
+        <li class="tab"><a href="#!">Example looonger text</a></li>
+        <li class="tab"><a href="#!">Meaningless</a></li>
+        <li class="tab"><a href="#!">empty is not null</a></li>
+    </ul>
 
 
-    <div class="side-scroll">
-        <header class="side-scroll-header scroll">
-            <nav class="vertical-align-middle">
-                <a href="#" class="nav-item active">CALENDÁRIO</a>
-                <a href="#" class="nav-item">ELETIVAS</a>
-                <a href="#" class="nav-item">NOTAS E FALTAS</a>
-                <a href="#" class="nav-item">ITEM 4</a>
-                <a href="#" class="nav-item">ITEM 5</a>
-            </nav>
-        </header>
+    <div class="container">
+        <div id="aula">
+            <!-- <div class="container">
+            <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="100%"
+                src="assets/background.jpg">
+        </div> -->
+            <div id="main">
+                <span id="number">5</span>
+            </div>
+            <div id="info">
+                <div id="data-aula">
+                    <div>22/09/2018</div>
+                    <div>15:09</div>
+                </div>
+                <div id="nome-aula">
+                    <div class="title">Nome da aula</div>
+                    <div>Professor John Doe</div>
+                </div>
+                <div id="nome-modulo">
+                    <div class="title">Nome do módulo</div>
+                    <div>Informações do módulo</div>
+                </div>
+            </div>
+            <hr>
+            <div id="materiais">
+                <div id="materiais-divider">MATERIAL DA AULA <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+                <div>Arquivos</div>
+                <ul id="lista-arquivos">
+                    <li><a href="#">Teoria.pdf</a></li>
+                    <li><a href="#">Slides.doc</a></li>
+                    <li><a href="#">Atividades.docx</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
-
-
-    <div id="aula">
-        <div id="main">
-            <span id="number">5</span>
-        </div>
-        <div id="info">
-            <div id="data-aula">
-                <div>22/09/2018</div>
-                <div>15:09</div>
+    <div class="container">
+        <div id="chat">
+            <div id="messages">
+                <div class='balloon you'>Professor ruim</div>
+                <div class='balloon them'>Olá João, poderia nos detalhar melhor sobre sua insatisfação?</div>
             </div>
-            <div id="nome-aula">
-                <div class="title">Nome da aula</div>
-                <div>Professor John Doe</div>
+            <hr>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div id="chat-input" class="input-field col s9">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Digite aqui sua mensagem</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <a id="chat-send" href="#"><i class="material-icons">send</i></a>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div id="nome-modulo">
-                <div class="title">Nome do módulo</div>
-                <div>Informações do módulo</div>
-            </div>
-        </div>
-        <hr>
-        <div id="materiais">
-            <div id="materiais-divider">MATERIAL DA AULA <i class="fa fa-angle-up" aria-hidden="true"></i>
-            </div>
-            <div>Arquivos</div>
-            <ul id="lista-arquivos">
-                <li><a href="#">Teoria.pdf</a></li>
-                <li><a href="#">Slides.doc</a></li>
-                <li><a href="#">Atividades.docx</a></li>
-            </ul>
         </div>
     </div>
-    
-    <div id="chat">
-        <div id="messages">
-            <div class='balloon you'>Professor ruim</div>
-            <div class='balloon them'>Olá João, poderia nos detalhar melhor sobre sua insatisfação?</div>
-        </div>
-        <hr>
-        <form action="#">
-            <input type="text" id="chat-input" placeholder="Digite aqui sua mensagem">
-            <input type="image" id="chat-send" src="https://cdn.onlinewebfonts.com/svg/img_130824.png" alt="Submit">
-        </form>
-        
-    </div>
-    <script src="assets/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/materialize.js"></script>
     <script src="assets/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 
 </html>
