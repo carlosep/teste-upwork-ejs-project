@@ -12,4 +12,5 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
     $('#title').html($(".sidenav li.active > a").text());
+    $('.sidenav').sidenav();
 });

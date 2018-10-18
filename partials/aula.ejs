@@ -1,0 +1,37 @@
+<div class="container">
+        <div id="aula">
+            <!-- <div class="container">
+            <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="100%"
+                src="assets/background.jpg">
+        </div> -->
+            <div id="main">
+                <span id="number"><%= numero %></span>
+            </div>
+            <div id="info">
+                <div id="data-aula">
+                    <div><%= data_aula[0] %></div>
+                    <div><%= data_aula[1] %></div>
+                </div>
+                <div id="nome-aula">
+                    <div class="title"><%= aula[0] %></div>
+                    <div><%= aula[1] %></div>
+                </div>
+                <div id="nome-modulo">
+                    <div class="title"><%= modulo[0] %></div>
+                    <div><%= modulo[1] %></div>
+                </div>
+            </div>
+            <hr>
+            <div id="materiais">
+                <div id="materiais-divider">MATERIAL DA AULA <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+                <div>Arquivos</div>
+                <ul id="lista-arquivos">
+                    <% arquivos.forEach(arquivo => {%>
+                        <li><a href="<%= arquivo[0] %>"><%= arquivo[1] %></a></li>
+                    <%})%>
+                </ul>
+            </div>
+        </div>
+
+    </div>

@@ -1,0 +1,23 @@
+<nav class="nav-extended teal lighten-2">
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <div id="title"><%= title %></div>
+    <div class="row teal lighten-2">
+        <div class="col s12">
+            <ul class="tabs teal lighten-2 ">
+                <% menu_items.forEach(item => {%>
+                    <li class="tab col s3"><a class="white-text" href="<%= item[0] %>"><%= item[1] %></a></li>
+                <%})%>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<ul id="slide-out" class="sidenav">
+    <li><a href="#!">Título</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <% sidebar_items.forEach(item => {%>
+        <li class="tab"><a href="<%= item[0] %>"><%= item[1] %></a></li>
+    <%})%>
+</ul>
